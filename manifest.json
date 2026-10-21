@@ -1,0 +1,37 @@
+{
+  "manifest_version": "0.3",
+  "name": "mcp-podcast-guest-host-finder",
+  "version": "1.0.0",
+  "description": "MCP server for Podcast Guest and Host Finder. Find podcasts on a topic with the host, the owner email from the public RSS feed, cadence, recent guests, and the contact and be a guest pages. Runs on Apify. Clay-ready output.",
+  "author": {
+    "name": "Mamba Labs"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/mambalabsdev/mcp-podcast-guest-host-finder",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mambalabsdev/mcp-podcast-guest-host-finder"
+  },
+  "server": {
+    "type": "node",
+    "entry_point": "build/index.js",
+    "mcp_config": {
+      "command": "node",
+      "args": [
+        "${__dirname}/build/index.js"
+      ],
+      "env": {
+        "APIFY_TOKEN": "${user_config.apify_token}"
+      }
+    }
+  },
+  "user_config": {
+    "apify_token": {
+      "type": "string",
+      "title": "Apify API Token",
+      "description": "Apify API token for running the actor",
+      "sensitive": true,
+      "required": false
+    }
+  }
+}

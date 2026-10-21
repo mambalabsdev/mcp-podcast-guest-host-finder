@@ -1,0 +1,51 @@
+{
+  "name": "@mambalabsdev/mcp-podcast-guest-host-finder",
+  "version": "1.0.0",
+  "description": "MCP server for Podcast Guest and Host Finder. Find podcasts on a topic with the host, the owner email from the public RSS feed, cadence, recent guests, and the contact and be a guest pages. Runs on Apify. Clay-ready output.",
+  "type": "module",
+  "bin": {
+    "mcp-podcast-guest-host-finder": "./build/index.js"
+  },
+  "files": [
+    "build",
+    "README.md",
+    "LICENSE",
+    "SECURITY.md"
+  ],
+  "scripts": {
+    "build": "tsc && chmod +x build/index.js",
+    "test": "npm run build && node --test test/*.test.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "podcast",
+    "podcast-guests",
+    "guest-booking",
+    "pr-outreach",
+    "apple-podcasts",
+    "apify",
+    "clay",
+    "lead-generation"
+  ],
+  "author": "Mamba Labs <labs@mambamindsetgrowth.com>",
+  "license": "MIT",
+  "homepage": "https://apify.com/mambalabs/podcast-guest-host-finder",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mambalabsdev/mcp-podcast-guest-host-finder"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.0",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^26.2.0",
+    "typescript": "5.9.3"
+  },
+  "mcpName": "com.mambabuilt/mcp-podcast-guest-host-finder"
+}

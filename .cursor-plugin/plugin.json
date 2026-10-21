@@ -1,0 +1,32 @@
+{
+  "name": "mcp-podcast-guest-host-finder",
+  "displayName": "Podcast Guest and Host Finder",
+  "version": "1.0.0",
+  "description": "MCP server for Podcast Guest and Host Finder. Find podcasts on a topic with the host, the owner email from the public RSS feed, cadence, recent guests, and the contact and be a guest pages. Runs on Apify. Clay-ready output.",
+  "author": {
+    "name": "Mamba Labs",
+    "email": "labs@mambamindsetgrowth.com"
+  },
+  "homepage": "https://mambabuilt.com",
+  "repository": "https://github.com/mambalabsdev/mcp-podcast-guest-host-finder",
+  "license": "MIT",
+  "category": "productivity",
+  "tags": [
+    "podcast",
+    "podcast-guests",
+    "guest-booking",
+    "pr-outreach",
+    "apple-podcasts",
+    "apify"
+  ],
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "podcast",
+    "podcast-guests",
+    "guest-booking",
+    "pr-outreach",
+    "apify"
+  ],
+  "mcpServers": ".mcp.json"
+}

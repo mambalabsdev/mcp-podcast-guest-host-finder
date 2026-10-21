@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "mamba-podcast-guest-host-finder": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@mambalabsdev/mcp-podcast-guest-host-finder"
+      ],
+      "env": {
+        "APIFY_TOKEN": "your-apify-token"
+      }
+    }
+  }
+}
